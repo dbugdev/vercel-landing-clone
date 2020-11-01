@@ -1,0 +1,37 @@
+// Header
+header {
+  background-color: #fff;
+  padding: 14px 0;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      img {
+        width: 115px;
+      }
+    }
+
+    ul.products {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        padding: 8px;
+        color: $secondary-text-color;
+        font-size: 14px;
+      }
+    }
+
+    nav.auth {
+      a {
+        padding: 10px;
+        color: $secondary-text-color;
+        font-size: 14px;
+      }
+    }
+  }
+}
