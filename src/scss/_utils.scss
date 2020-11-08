@@ -1,24 +1,109 @@
 .container {
-  max-width: 65rem;
-  width: 65rem;
-  margin: 0 auto;
+	max-width: 65rem;
+	width: 65rem;
+	margin: 0 auto;
 }
 .btn {
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: 1px solid #000;
-  &-small {
-    font-size: 14px;
-    font-weight: 500;
-  }
-  &-primary {
-    background-color: #000;
-    color: #fff;
-    transition: all 0.3s;
-    &:hover {
-      cursor: pointer;
-      background-color: #fff;
-      color: #000;
-    }
-  }
+	border-radius: 5px;
+	border: 1px solid #000;
+	&-small {
+		font-size: 14px;
+		font-weight: 500;
+		padding: 6px 12px;
+	}
+	&-large {
+		font-size: 16px;
+		font-weight: 500;
+		height: 50px;
+		width: 200px;
+		//padding: 0.85rem 2rem;
+	}
+	&-primary {
+		background-color: #000;
+		color: #fff;
+		transition: all 0.3s;
+		&:hover {
+			cursor: pointer;
+			background-color: #fff;
+			color: #000;
+		}
+	}
+	&-secondary {
+		background-color: #fff;
+		color: #666;
+		transition: all 0.3s;
+		border: 1px solid #eaeaea;
+		&:hover {
+			cursor: pointer;
+			border: 1px solid #000;
+			color: #000;
+		}
+	}
+}
+
+.flex {
+	display: flex;
+	&.justify-center {
+		justify-content: center;
+	}
+	&.align-center {
+		align-items: center;
+	}
+	&.flex-column {
+		flex-direction: column;
+	}
+}
+.text-center {
+	text-align: center;
+}
+
+@for $i from 1 through 3 {
+	.m-#{$i} {
+		margin: #{$i}rem;
+	}
+	.mr-#{$i} {
+		margin-right: #{$i}rem;
+	}
+	.mt-#{$i} {
+		margin-top: #{$i}rem;
+	}
+	.ml-#{$i} {
+		margin-left: #{$i}rem;
+	}
+	.mb-#{$i} {
+		margin-bottom: #{$i}rem;
+	}
+	.mx-#{$i} {
+		margin-right: #{$i}rem;
+		margin-left: #{$i}rem;
+	}
+	.my-#{$i} {
+		margin-top: #{$i}rem;
+		margin-bottom: #{$i}rem;
+	}
+}
+@for $i from 1 through 3 {
+	.p-#{$i} {
+		padding: #{$i}rem;
+	}
+	.pr-#{$i} {
+		padding-right: #{$i}rem;
+	}
+	.pt-#{$i} {
+		padding-top: #{$i}rem;
+	}
+	.pl-#{$i} {
+		padding-left: #{$i}rem;
+	}
+	.pb-#{$i} {
+		padding-bottom: #{$i}rem;
+	}
+	.px-#{$i} {
+		padding-right: #{$i}rem;
+		padding-left: #{$i}rem;
+	}
+	.py-#{$i} {
+		padding-top: #{$i}rem;
+		padding-bottom: #{$i}rem;
+	}
 }

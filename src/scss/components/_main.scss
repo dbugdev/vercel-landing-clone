@@ -1,0 +1,94 @@
+main {
+	.heading {
+		margin: 4rem 0;
+		h1 {
+			font-size: 160px;
+			font-weight: 800;
+			line-height: 1;
+			overflow: hidden;
+			// padding: 1rem 0;
+			letter-spacing: -0.08em;
+			width: 100%;
+			text-align: center;
+			background-color: #000000;
+
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+
+			&:first-child {
+				background-image: linear-gradient(90deg, #007cf0, #00dfd8);
+				animation: anim1 10s ease infinite;
+			}
+			&:nth-child(2) {
+				background-image: linear-gradient(90deg, #7928ca, #ff0080);
+				animation: anim2 10s ease infinite;
+			}
+			&:last-child {
+				background-image: linear-gradient(90deg, #ff4d4d, #f9cb28);
+				animation: anim3 10s ease-in-out infinite;
+			}
+		}
+	}
+
+	p {
+		font-size: 20px;
+		color: #666666;
+		line-height: 1.5;
+	}
+}
+
+@keyframes anim1 {
+	0%,
+	28%,
+	100% {
+		//show color
+		color: transparent;
+	}
+	33%,
+	94% {
+		// No color
+		color: #000000;
+	}
+}
+
+@keyframes anim2 {
+	0%,
+	28%,
+	66%,
+	100% {
+		// No color
+		color: #000000;
+	}
+	33%,
+	61% {
+		//show color
+		color: transparent;
+	}
+}
+
+@keyframes anim3 {
+	0%,
+	61%,
+	100% {
+		// No color
+		color: #000000;
+	}
+	66%,
+	94% {
+		//show color
+		color: transparent;
+	}
+}
+
+/*
+0-28 color hold 
+28-33 transition 1st
+28-33 transition 2nd
+33 -61 2nd color hold
+61-66 transition 2nd
+61-66 transition 3rd
+66-94 hold
+94 -100 transition 3
+94-100 transition 1
+*/
