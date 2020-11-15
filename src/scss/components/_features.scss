@@ -1,0 +1,77 @@
+#develop,
+#preview,
+#ship {
+	margin: 2rem auto 0;
+
+	.features {
+		> div {
+			margin-bottom: 4rem;
+		}
+	}
+
+	.counter {
+		display: block;
+		height: 40px;
+		width: 40px;
+		font-size: 1rem;
+		background: $gradient1;
+		border-radius: 100px;
+		color: #fff;
+		text-align: center;
+		line-height: 40px;
+		position: relative;
+		margin: 9rem auto 1.5rem;
+
+		&::before {
+			content: "";
+			height: 100px;
+			width: 1px;
+			display: block;
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			background: $gradient1Vertical;
+		}
+		&-2 {
+			background: $gradient2;
+			&::before {
+				background: $gradient2Vertical;
+			}
+		}
+	}
+	.frameworks {
+		grid-gap: 30px;
+		align-items: center;
+		justify-items: center;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	p.fluid-paragraph {
+		max-width: 720px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+#develop {
+	margin: 7rem auto 0;
+	h2 {
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-image: $gradient1;
+	}
+}
+#preview {
+	h2 {
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-image: $gradient2;
+	}
+	a {
+		color: #de1d8d;
+	}
+}

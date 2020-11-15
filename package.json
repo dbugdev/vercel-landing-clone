@@ -1,25 +1,27 @@
 {
-  "name": "vercel-landing-clone",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soumakdt/vercel-landing-clone.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/soumakdt/vercel-landing-clone/issues"
-  },
-  "homepage": "https://github.com/soumakdt/vercel-landing-clone#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.28.0"
-  },
-  "scripts": {
-    "start": "parcel ./src/index.html -p 3000 --out-dir build/dist --cache-dir build/.cache",
-    "build": "parcel build ./src/index.html --out-dir dist --cache-dir build/.cache"
-  }
+	"name": "vercel-landing-clone",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/soumakdt/vercel-landing-clone.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/soumakdt/vercel-landing-clone/issues"
+	},
+	"homepage": "https://github.com/soumakdt/vercel-landing-clone#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4",
+		"prettier": "^2.1.2",
+		"sass": "^1.28.0"
+	},
+	"scripts": {
+		"start": "parcel ./src/index.html -p 3000 --out-dir build/dist --cache-dir build/.cache",
+		"build": "parcel build ./src/index.html --out-dir dist --cache-dir build/.cache",
+		"format": "prettier --write ."
+	}
 }

@@ -3,6 +3,11 @@
 	width: 65rem;
 	margin: 0 auto;
 }
+.container-fluid {
+	max-width: 70rem;
+	width: 70rem;
+	margin: 0 auto;
+}
 .btn {
 	border-radius: 5px;
 	border: 1px solid #000;
@@ -57,7 +62,53 @@
 	text-align: center;
 }
 
-@for $i from 1 through 3 {
+.grid {
+	display: grid;
+	grid-gap: 20px;
+	&-2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	&-9 {
+		grid-template-columns: repeat(9, 1fr);
+	}
+}
+
+h1.large-heading {
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	font-size: 3.75rem;
+	text-align: center;
+}
+.normal-heading {
+	letter-spacing: -0.05em;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 700;
+}
+
+h3.small-heading {
+	font-size: 1.5rem;
+	letter-spacing: -0.05em;
+	font-weight: bold;
+	margin-bottom: 0.75rem;
+}
+
+h4.small-caps {
+	font-size: 12px;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.6;
+	letter-spacing: -0.02em;
+	color: #666666;
+}
+
+@for $i from 1 through 5 {
 	.m-#{$i} {
 		margin: #{$i}rem;
 	}
@@ -82,7 +133,7 @@
 		margin-bottom: #{$i}rem;
 	}
 }
-@for $i from 1 through 3 {
+@for $i from 1 through 5 {
 	.p-#{$i} {
 		padding: #{$i}rem;
 	}

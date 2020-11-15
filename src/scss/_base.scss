@@ -12,9 +12,14 @@ li {
 }
 a {
 	text-decoration: none;
-	color: inherit;
+	color: #0a72ef;
 }
 ::selection {
-  background-color: #79fee0;
-  color: #000;
+	background-color: #79fee0;
+	color: #000;
+}
+
+img {
+	display: block;
+	width: 100%;
 }
