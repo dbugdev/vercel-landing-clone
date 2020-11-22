@@ -1,8 +1,6 @@
 #develop,
 #preview,
 #ship {
-	margin: 2rem auto 0;
-
 	.features {
 		> div {
 			margin-bottom: 4rem;
@@ -20,7 +18,7 @@
 		text-align: center;
 		line-height: 40px;
 		position: relative;
-		margin: 9rem auto 1.5rem;
+		margin: 9rem auto 0;
 
 		&::before {
 			content: "";
@@ -37,6 +35,13 @@
 			background: $gradient2;
 			&::before {
 				background: $gradient2Vertical;
+			}
+		}
+		&-3 {
+			background: $gradient3;
+			margin: 0 auto;
+			&::before {
+				display: none;
 			}
 		}
 	}
@@ -65,6 +70,7 @@
 	}
 }
 #preview {
+	margin: 2rem auto 0;
 	h2 {
 		-webkit-background-clip: text;
 		background-clip: text;
@@ -73,5 +79,62 @@
 	}
 	a {
 		color: #de1d8d;
+	}
+	.drop-line {
+		width: 1.5px;
+		background: $gradient3Vertical;
+		height: 5rem;
+		margin: 5rem auto 0;
+	}
+	.preview-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 50px 1fr;
+		grid-gap: 0 2rem;
+		.preview-item {
+			height: 350px;
+			img {
+				transform: translateY(-5rem);
+			}
+			article {
+				padding-right: 4rem;
+			}
+			position: relative;
+			.timeline {
+				display: block;
+				height: 11px;
+				width: 11px;
+				box-shadow: 0 0 0 1.5px #999;
+				border-radius: 100px;
+				margin: 0 auto;
+
+				&::after {
+					content: "";
+					height: calc(100% - 11px);
+					width: 0px;
+					display: block;
+					border-right: 0.5px dashed #999;
+					position: absolute;
+					top: 11px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+
+			&:nth-child(8) > .timeline::after {
+				border: 0;
+				width: 1.5px;
+				background: $gradient4Vertical;
+			}
+		}
+	}
+}
+
+#ship {
+	margin: 0 auto;
+	h2 {
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-image: $gradient3;
 	}
 }
