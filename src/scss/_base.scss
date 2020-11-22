@@ -23,3 +23,12 @@ img {
 	display: block;
 	width: 100%;
 }
+
+#globe {
+	margin: 5rem 0;
+	overflow: hidden;
+	canvas {
+		display: block;
+		margin: 0 auto;
+	}
+}
