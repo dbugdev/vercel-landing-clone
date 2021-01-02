@@ -44,6 +44,33 @@
 			color: #000;
 		}
 	}
+	&-auth {
+		border: 0;
+		color: #fff;
+		display: block;
+		padding: 12px 0;
+		width: 100%;
+		position: relative;
+		margin-bottom: 7px;
+
+		> img {
+			width: 20px;
+			position: absolute;
+			left: 22px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.github {
+	background-color: #24292e;
+}
+.gitlab {
+	background-color: #6b4fbb;
+}
+.bitbucket {
+	background-color: #0052cc;
 }
 
 .flex {
@@ -62,14 +89,24 @@
 	text-align: center;
 }
 
+.text-uppercase {
+	text-transform: uppercase;
+}
+
 .grid {
 	display: grid;
 	grid-gap: 20px;
+	&.gap-50 {
+		grid-gap:50px;
+	}
 	&-2 {
 		grid-template-columns: repeat(2, 1fr);
 	}
 	&-9 {
 		grid-template-columns: repeat(9, 1fr);
+	}
+	&-4 {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 

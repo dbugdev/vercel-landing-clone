@@ -5,6 +5,7 @@ header {
 	position: sticky;
 	top: 0;
 	transition: box-shadow 0.3s ease-out;
+	z-index: 99;
 
 	&::after {
 		content: "";
