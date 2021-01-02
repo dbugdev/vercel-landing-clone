@@ -138,3 +138,70 @@
 		background-image: $gradient3;
 	}
 }
+
+#stats {
+	background-color: #fafafa;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+
+	.stats-item:not(:last-child) {
+		border-right: 1px solid #eaeaea;
+	}
+}
+
+#journey {
+	.repo {
+		padding: 32px;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+		background-color: #fff;
+
+		article {
+			padding: 85px 48px;
+			background-color: #fafafa;
+			border: 1px solid #eaeaea;
+			border-radius: 5px;
+		}
+	}
+
+	.clone {
+		background-color: #fafafa;
+		border: 1px solid #eaeaea;
+		border-radius: 5px;
+		padding: 32px;
+
+		.template {
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+			background-color: #fff;
+
+			p {
+				font-weight: bold;
+				color: #000;
+				padding: 12px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #fafafa;
+	border-top: 1px solid #eaeaea;
+	padding: 36px 0;
+
+	ul {
+		list-style-type: none;
+
+		li:first-child {
+			color: #000;
+		}
+
+		li {
+			padding: 8px 0;
+			color: #666;
+			font-size: 14px;
+		}
+	}
+	img {
+		width: 80px;
+	}
+}
